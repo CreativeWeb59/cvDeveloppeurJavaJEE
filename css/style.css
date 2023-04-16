@@ -99,6 +99,7 @@ header{
     box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
+
 section{
     width: 100%;
     border-radius: 50px;
@@ -205,11 +206,11 @@ section #droite{
     align-content: center;
 }
 
-.w-240{
+.h-240{
     height: 240px;
 }
 
-.w-300{
+.h-300{
     height: 320px;
 }
 
@@ -375,7 +376,182 @@ section #droite{
     margin: 10px 0;
 }
 
-/* https://www.youtube.com/watch?v=7glClI-rj74 */
+/* section contact */
+#contact{
+    height: 80vh;
+}
+
+/*h1{
+    color: #1f1f1f;
+    text-align: center;
+    margin: 50px;
+}*/
+
+.contain-tout{
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.form-container{
+    width: 50%;
+    height: 100%;
+}
+
+#contact-form{
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px;
+}
+
+#contact-form div{
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+
+#contact-form div::before{
+    font-family: FontAwesome;
+    z-index: 2;
+    width: 20px;
+    color: #cccccc;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+#contact-form div:nth-child(1):before {
+    content: '\f007';
+}
+
+#contact-form div:nth-child(2):before {
+    content: '\f0e0';
+}
+
+#contact-form div:nth-child(3):before {
+    content: '\f3cd';
+}
+#contact-form div:nth-child(4){
+    height: 100px;
+}
+#contact-form div:nth-child(4):before {
+    content: '\f075';
+    top: 0;
+}
+
+input, textarea {
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    border: 0;
+    border-bottom:2px solid #dddddd;
+    background-color: transparent;
+ }
+
+ label{
+    display: inline-block;
+    width: 22%;
+    padding-left: 30px;
+    color: #cccccc;
+    margin-right: 10px;
+ }
+
+ #message{
+    position: absolute;
+ }
+input{
+    height: 40px;
+}
+
+input:focus, textarea:focus{
+    border-bottom:2px solid #01109b;
+    outline: none;
+}
+
+
+/* Voici les règles de mise en forme pour les champs invalides */
+input.invalid{
+    border-color: #900;
+    background-color: #FDD;
+  }
+  
+  input:focus.invalid {
+    outline: none;
+  }
+
+/* Voici les règles utilisées pour les messages d'erreur */
+.error {
+    width  : 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }
+
+  /* fin traitement des erreurs*/
+  
+textarea{
+    height: 100px;
+    resize: none;
+}
+::placeholder{
+    font-style: italic;
+}
+
+.btn{
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border: 1px solid #dddddd;
+    transition: 1s;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    border: 1px solid #01109b;
+    background: #01109b;
+    color: #dddddd;
+}
+
+/* Cadre pour message d'envoi */
+#result-form{
+    height: 100px;
+    width: 400px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 30px 20px 30px 20px;
+}
+
+.form-image{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding: 50px;
+}
+
+.form-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    width: 80%;
+    height: auto;
+}
 
 /* footer */
 footer{
@@ -383,4 +559,216 @@ footer{
     height: 80px;
     background-color: var(--color-purple1);
     margin: 100px 0;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        /*margin: 10px auto;*/
+        position: relative;
+    }
+    /* header */
+    header{
+        border-radius: 0;
+        box-shadow: none;
+    }
+    section{
+        border-radius: 0;
+        margin-top: 10px;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    #contain-id{
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+        border-radius: 0;
+        flex-wrap: wrap;
+    }
+    #contain-id #intro {
+        width: 62%;
+        font-size: 1.4rem;
+        padding: 10px; 
+    }
+
+    #contain-id #photo{
+        width: 38%;
+        position: static;
+        padding: 10px auto;
+        margin: 60px 0 0 0;
+    }
+    #photo img{
+        width: 80%;
+        height: auto;
+        position:static;
+        transform: translate(0);
+    }
+    .grd-ecran{
+        display: none;
+    }
+    .pt-ecran{
+        width: 100%;
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+    h1{
+        display: block;
+        background: linear-gradient(to bottom right, var(--color-purple1), var(--color-purple2));
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        font-size: 1.6rem;
+        margin-top: 0;
+        padding: 16px;
+        color: #fff;
+        border-radius: 0;
+    }
+
+    /* section */
+    #xp{
+        display: block;
+        /*min-height: 150vh;*/
+    }
+    section #gauche{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+    #gauche h2{
+        font-size: 1.4rem;
+        margin-top: 30px;
+        padding: 10px;
+        margin-bottom: 20px;
+        height: 50px;
+    }
+    #gauche h3{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .h-240{
+        height: 300px;
+    }
+    .h-300{
+        height: 500px;
+    }
+    #gauche p{
+        font-size: 0.9rem;
+    }
+
+    /* bordure de cote */
+    #gauche .date{
+        font-size: 0.9rem;
+    }
+    
+    #gauche .cercle{
+        width: 40px;
+    }
+    
+    .cercle svg{
+        width: 10px;
+    }
+    #gauche .carte::before{
+        border-top: 10px solid transparent;
+        border-right: 10px solid var(--color-purple2);
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        left: -8px;
+    }
+    /* cote droit qui passe en bas */
+    section #droite{
+        width: 100%;
+        padding: 20px;
+    }
+    #droite .liste{
+        padding: 30px;
+        box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+        margin-bottom: 40px;
+    }
+    #droite h3{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /* portofolio */
+    #portofolio{
+        width: 100%;
+        padding: 0;
+    }
+
+    #portofolio h2{
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 0 0 20px 0;
+        padding: 16px;
+        border-radius: 0;
+        margin: 0;
+    }
+    /* carte */
+    .container-portofolio{
+        width: 100%;
+        height: 950vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card{
+        position: static;
+        /*margin: 20px 0;*/
+        width: 90%;
+        height: 92vh;
+        transform-style: unset;
+        transform: unset;
+        transition: 0;
+        box-shadow: none;
+        border: 1px solid var(--color-purple1);
+        margin: 40px 0;
+    }
+    
+    .card:hover{
+        z-index: 1000;
+        transform: unset;
+        box-shadow: none;
+    }
+    
+    .card .imgBox{
+        position: static;
+        width: 100%;
+        height: 300px;
+        transform-origin: left;
+        z-index: 1;
+        transition: none;
+    }
+    
+    .card:hover .imgBox{
+        transform: rotateY(0);
+    }
+    
+    .card .imgBox img{
+        position: static;
+        width: 100%;
+        height: 300px;
+    }
+    .card .details{
+        position: static;
+        padding: 10px;
+    }
+    
+    .card .details h3{
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .card .details p{
+        font-size: 0.9rem;
+    }
+    .card .details a{
+        font-size: 0.9rem;
+    }
 }

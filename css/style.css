@@ -978,4 +978,9 @@ footer {
     .container{
         z-index: -1;
     }
+
+    /* placement des liens de destination menu burger*/
+    .decallage-lien{
+        margin-top: 10px;
+    }
 }

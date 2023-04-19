@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/097058085d.js" crossorigin="anonymous"></script>
     <title>Cv Delphine MAURER</title>
 </head>
 
@@ -26,7 +27,7 @@
                 <li><a href="#xp">Expériences</a></li>
                 <li><a href="#form">Formations</a></li>
                 <li><a href="#portofolio">Portofolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contactLink">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -46,7 +47,8 @@
             </div>
             <h1>Developpeuse Java JEE</h1>
         </header>
-        <section id="xp" class="decallage-lien">
+        <div id="xp"></div>
+        <section class="decallage-lien" id="section">
             <div id="gauche">
                 <h2>EXPERIENCES</h2>
                 <div class="liste h-240">
@@ -130,6 +132,7 @@
                         <p>Secrétariat, comptabilité, paie.</p>
                     </div>
                 </div>
+                <div id="form"></div>
                 <h2 id="form" class="decallage-lien">FORMATION</h2>
                 <div class="liste h-300">
                     <div class="date">2020 - 2021</div>
@@ -473,43 +476,44 @@
 
             </div>
         </section>
+        <div id="contactLink"></div>
         <section id="contact" class="decallage-lien">
-            <div id="result-form">
-                <div class="contain-tout">
-                    <h2>CONTACT</h2>
-                    <div class="form-container">
-                        <form method="post" id="contact-form">
-                            <div>
-                                <label for="nom">Nom : *</label>
-                                <input type="text" name="nom" id="nom" required minlength="3" maxlength="20">
-                                <span class="error"></span>
-                            </div>
-                            <div>
-                                <label for="email">Adresse email : *</label>
-                                <input type="email" name="email" id="email" minlength="6" maxlength="50">
-                                <span class="error"></span>
-                            </div>
-                            <div>
-                                <label for="telephone">Téléphone :</label>
-                                <input type="text" name="telephone" id="telephone">
-                                <span class="error"></span>
-                            </div>
-                            <div>
-                                <label for="message">Message : *</label>
-                                <textarea name="message" id="message" name="message" required minlength="10"
-                                    maxlength="250"></textarea>
-                                <span class="error"></span>
-                            </div>
-                            <div>
-                                <input class="btn" id="submit" type="submit" value="Envoyer">
-                            </div>
-                        </form>
-                    </div>
+            <h2>CONTACT</h2>
+            <div id="result-form"></div>
+            <div class="contain-tout">
+                <div class="form-container">
+                    <form method="post" id="contact-form">
+                        <div>
+                            <label for="nom">Nom : *</label>
+                            <input type="text" name="nom" id="nom" required minlength="3" maxlength="20">
+                            <span class="error"></span>
+                        </div>
+                        <div>
+                            <label for="email">Adresse email : *</label>
+                            <input type="email" name="email" id="email" minlength="6" maxlength="50">
+                            <span class="error"></span>
+                        </div>
+                        <div>
+                            <label for="telephone">Téléphone :</label>
+                            <input type="text" name="telephone" id="telephone">
+                            <span class="error"></span>
+                        </div>
+                        <div>
+                            <label for="message">Message : *</label>
+                            <textarea name="message" id="message" name="message" required minlength="10"
+                                maxlength="250"></textarea>
+                            <span class="error"></span>
+                        </div>
+                        <div>
+                            <input class="btn" id="submit" type="submit" value="Envoyer">
+                        </div>
+                    </form>
                 </div>
                 <div class="form-image">
                     <img src="images/iphone.jpg" alt="image contact">
                 </div>
             </div>
+
         </section>
 
     </div>

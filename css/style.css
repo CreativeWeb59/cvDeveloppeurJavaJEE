@@ -147,9 +147,19 @@ section {
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
-#xp {
+#section{
     display: flex;
-    min-height: 150vh;
+}
+
+#xp {
+    margin-bottom: 20px;
+}
+
+#form {
+    margin-bottom: 40px;
+}
+#contactLink{
+    margin-bottom: 40px;
 }
 
 #contain-id {
@@ -421,36 +431,49 @@ section #droite {
     margin: 10px 0;
 }
 
+
 /* section contact */
-#contact {
-    height: 80vh;
+
+#contact h2 {
+    display: block;
+    background-color: var(--color-purple1);
+    background: linear-gradient(to bottom right, var(--color-purple1), var(--color-purple2));
+    color: #fff;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
 }
 
-/*h1{
-    color: #1f1f1f;
-    text-align: center;
-    margin: 50px;
-}*/
+#contact {
+    height: 90vh;
+}
 
 .contain-tout {
-    width: 80%;
+    width: 90%;
     height: 500px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px #bebebe, -2px -2px 6px #ffffff;
 }
 
 .form-container {
-    width: 50%;
+    width: 60%;
     height: 100%;
 }
 
 #contact-form {
     width: 100%;
     height: 100%;
-    padding: 50px 50px;
+    padding: 10px;
 }
 
 #contact-form div {
@@ -504,7 +527,7 @@ label {
     display: inline-block;
     width: 22%;
     padding-left: 30px;
-    color: #cccccc;
+    color: black;
     margin-right: 10px;
 }
 
@@ -564,8 +587,10 @@ textarea {
 
 .btn {
     width: 100%;
+    height: 50px;
     padding: 0;
-    background: transparent;
+    background: var(--color-purple1);
+    color: #fff;
     border: 1px solid #dddddd;
     transition: 1s;
     border-radius: 10px;
@@ -573,22 +598,24 @@ textarea {
 }
 
 .btn:hover {
-    border: 1px solid #01109b;
-    background: #01109b;
-    color: #dddddd;
+    border: 1px solid var(--color-purple1);
+    background: #fff;
+    color: var(--color-purple1);
+    cursor: pointer;
 }
 
 /* Cadre pour message d'envoi */
 #result-form {
-    height: 100px;
-    width: 400px;
-    margin: 60px auto;
+    height: 10%;
+    width: 60%;
+    margin: 0 auto;
     text-align: center;
     padding: 30px 20px 30px 20px;
+    color: #fff;
 }
 
 .form-image {
-    width: 50%;
+    width: 40%;
     height: 100%;
     position: relative;
     padding: 50px;

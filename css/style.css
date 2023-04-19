@@ -522,6 +522,7 @@ textarea {
     border: 0;
     border-bottom: 2px solid #dddddd;
     background-color: transparent;
+    z-index: 999;
 }
 
 label {
@@ -530,6 +531,7 @@ label {
     padding-left: 30px;
     color: black;
     margin-right: 10px;
+    z-index: 999;
 }
 
 #message {
@@ -647,7 +649,7 @@ footer {
     .container {
         width: 100%;
         /*margin: 10px auto;*/
-        position: relative;
+        position: static;
     }
 
     /* header */

@@ -351,11 +351,14 @@ section #droite {
 
 /* portofolio */
 #portofolio {
-    width: 100%;
-    padding-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-#portofolio h2 {
+#portofolio-section {
+    width: 100%;
+}
+
+#portofolio-section h2 {
     width: 100%;
     height: 80px;
     text-align: center;
@@ -734,7 +737,7 @@ footer {
         padding: 20px;
     }
 
-    #gauche h2 {
+    h2 {
         font-size: 1.4rem;
         margin-top: 30px;
         padding: 10px;
@@ -803,7 +806,7 @@ footer {
         padding: 0;
     }
 
-    #portofolio h2 {
+    /* #portofolio h2 {
         width: 100%;
         height: 70px;
         text-align: center;
@@ -812,7 +815,7 @@ footer {
         padding: 16px;
         border-radius: 0;
         margin: 0;
-    }
+    } */
 
     /* carte */
     .container-portofolio {
@@ -955,6 +958,7 @@ footer {
         width: 100%;
         height: 60px;
         position: relative;
+        background-color: #fff;
     }
 
     #topnav_hamburger_icon {
@@ -1030,13 +1034,22 @@ footer {
     /* .contain-tout {
     } */
 
+    #contact h2 {
+        margin-bottom: 0;
+    }
+
     .form-container {
         width: 100%;
     }
 
-    .form-image{
+    .form-image {
         display: none;
     }
+
+    #result-form {
+        display: none;
+    }
+
     input,
     textarea {
         width: 80%;
@@ -1059,7 +1072,7 @@ footer {
         color: black;
         margin-right: 0;
         margin-left: 30px;
-    } 
+    }
 
     input:focus,
     textarea:focus {
@@ -1070,8 +1083,39 @@ footer {
         outline: unset;
     }
 
-    #submit{
+    #submit {
         width: 80%;
         margin-left: 30px;
+    }
+    .btn {
+        transition: none;
+    }
+    
+
+    /* decallages hauteur redirection des liens */
+    #home {
+        margin-bottom: -20px;
+    }
+
+    #form {
+        margin-bottom: 60px;
+    }
+
+    #portofolio {
+        margin-bottom: 40px;
+    }
+
+    #contactLink {
+        margin-bottom: 20px;
+    }
+
+
+    /* communs */
+    #portofolio-section h2, #contact h2 {
+        border-radius: 0;
+        height: 60px;
+        font-size: 1.5rem;
+        padding: 10px 0 4px 0;
+        margin-bottom: 10px;
     }
 }

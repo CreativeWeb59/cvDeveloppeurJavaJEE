@@ -1118,4 +1118,15 @@ footer {
         padding: 10px 0 4px 0;
         margin-bottom: 10px;
     }
+    
+    #contain-id #intro h2 {
+        height: 70px;
+        margin-top: 0;
+    }
+
+    h5{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
 }

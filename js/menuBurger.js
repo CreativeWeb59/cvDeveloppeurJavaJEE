@@ -5,14 +5,15 @@ const root = document.getElementById("home");
 const lienNav = document.querySelectorAll("nav ul li a");
 
 function afficheMenu(){
-    if (menu.className === "") {
-        menu.className = "open";
-        icon.className = "open";
-        root.style.overflowY = "hidden";
-    } else {
+    
+    if (menu.className === "open") {
         menu.className = "";                    
         icon.className = "";
-        root.style.overflowY = "";
+        // root.style.overflowY = "";
+    } else {
+        menu.className = "open";
+        icon.className = "open";
+        // root.style.overflowY = "hidden";
     }
 }
 
@@ -23,14 +24,15 @@ function afficheMenu(){
 // fermeture du menu burger
 
 function cacheMenu(){
-    if (!menu.className === "") {
-        menu.className = "open";
-        icon.className = "open";
-        root.style.overflowY = "hidden";
-    } else {
+    console.log('click');
+    if (menu.className === "open") {
         menu.className = "";                    
         icon.className = "";
-        root.style.overflowY = "";
+        //root.style.overflowY = "";
+    } else {
+        menu.className = "open";
+        icon.className = "open";
+        //root.style.overflowY = "hidden";
     }
 }
 
@@ -38,20 +40,4 @@ for (let element of lienNav) {
     element.addEventListener("click", cacheMenu);
 }
 
-// btnBurger.addEventListener('click', afficheMenu);
-
-// btnBurger.addEventListener("click", (Event)=>{
-//     console.log("Click");
-// });
-
-btnBurger.addEventListener('click', event => {
-    if (menu.className === "") {
-        menu.className = "open";
-        icon.className = "open";
-        root.style.overflowY = "hidden";
-    } else {
-        menu.className = "";                    
-        icon.className = "";
-        root.style.overflowY = "";
-    }
-  });
+btnBurger.addEventListener('click', afficheMenu);

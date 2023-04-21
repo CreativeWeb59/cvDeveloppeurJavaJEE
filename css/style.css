@@ -212,6 +212,9 @@ h2 {
     font-size: 1.5rem;
 }
 
+h5{
+    display: none;
+}
 p {
     font-size: 1rem;
 }
@@ -648,7 +651,13 @@ footer {
 
 /* Responsive */
 
+h4{
+    display: none;
+}
 @media only screen and (max-width: 1024px) {
+    body{
+        width: 100vw;
+    }
     .container {
         width: 100%;
         /*margin: 10px auto;*/
@@ -902,6 +911,7 @@ footer {
         left: 0;
         top: 0;
         z-index: 999;
+        background-color: #0078b4;
     }
 
     #home_link {
@@ -910,18 +920,23 @@ footer {
 
     /* position responsive menu at the right of the screen */
     #topnav_responsive_menu ul {
-        display: flex;
+        display: block;
         flex-direction: column;
         position: absolute;
-        justify-content: space-around;
+        justify-content: flex-start;
         margin: 0;
-        top: 10vh;
+        top: 70px;
         min-width: 50vw;
-        height: 90vh;
+        height: 100%;
         width: 100%;
         border-radius: 0;
         box-shadow: none;
         background-color: #fff;
+        padding: 0;
+    }
+    #topnav_responsive_menu ul li {
+        margin: 50px 0;
+        text-align: center;
     }
 
     /* disable horizontal scrolling  */
@@ -936,14 +951,15 @@ footer {
         display: block;
         position: absolute;
         left: 0;
-        top: -7px;
+        top: 0;
         margin: 0;
         width: 100vw;
-        height: 102vh;
+        height: calc(100vh - 70px);
         z-index: 99;
         transform-origin: 0% 0%;
         transform: translate(-200%, 0);
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        background-color: #fff;
     }
 
     /* and let's slide it in from the right */
@@ -956,13 +972,13 @@ footer {
     /* define size and position of the hamburger link */
     #contain-ico {
         width: 100%;
-        height: 60px;
+        height: 70px;
         position: relative;
         background-color: #fff;
     }
 
     #topnav_hamburger_icon {
-        top: 10px;
+        top: 20px;
         left: 20px;
         /*margin: 16px;*/
         width: 33px;
@@ -987,7 +1003,6 @@ footer {
         z-index: 100;
         opacity: 1;
         left: 0;
-
         transform: rotate(0deg);
         transition: .25s ease-in-out;
     }
@@ -1090,7 +1105,7 @@ footer {
     .btn {
         transition: none;
     }
-    
+        
 
     /* decallages hauteur redirection des liens */
     #home {
@@ -1125,8 +1140,19 @@ footer {
     }
 
     h5{
+        display: block;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 1.2rem;
+    }
+
+    /* Titre de fin de page dans le footer */
+    h4{
+        display: block;
+        text-align: center;
+        color: #fff;
+        font-size: 1.2rem;
+        padding-top: 10px;
+        font-weight: 400;
     }
 }

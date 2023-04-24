@@ -85,3 +85,22 @@ footer p{
     text-align: center;
     font-size: 1.4rem;
 }
+
+@media only screen and (max-width: 1024px) {
+    header, main, footer{
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    h1{
+        margin: 0;
+    }
+    #contain-image{
+        width: 80%;
+        margin: 20px auto;
+    }
+    main{
+        margin: 0;
+        padding: 10px;
+    }
+}
